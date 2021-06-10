@@ -90,7 +90,7 @@ console.log(`value: ${x}, type: ${typeof x}`);
 // symbol, create unique identifiers for objects
 const symbol1 = Symbol("id");
 const symbol2 = Symbol("id");
-console.log(symbol1 === symbol2);
+console.log(symbol1 === symbol2); // false
 const gSymbol1 = Symbol.for("id");
 const gSymbol2 = Symbol.for("id");
 console.log(gSymbol1 === gSymbol2); // true
@@ -102,12 +102,12 @@ ellie.age = 21;
 
 // 5. Dynamic typing: dynamically typed language
 let text = "hello";
-console.log(text.charAt(0)); //h
-console.log(`value: ${text}, type: ${typeof text}`);
+console.log(text.charAt(0)); // h
+console.log(`value: ${text}, type: ${typeof text}`); // value: hello, type: string
 text = 1;
-console.log(`value: ${text}, type: ${typeof text}`);
+console.log(`value: ${text}, type: ${typeof text}`); // value: 1, type: number
 text = "7" + 5;
-console.log(`value: ${text}, type: ${typeof text}`);
+console.log(`value: ${text}, type: ${typeof text}`); // value: 75, type: string
 text = "8" / "2";
-console.log(`value: ${text}, type: ${typeof text}`);
-console.log(text.charAt(0));
+console.log(`value: ${text}, type: ${typeof text}`); // value: 4, type: number
+console.log(text.charAt(0)); // TypeError

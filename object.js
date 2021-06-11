@@ -4,6 +4,8 @@
 // a collection of related data and/or functionality.
 // Nearly all objects in JavaScript are instances of Object
 // object = { key : value };
+
+// 1. Literals and properties
 const obj1 = {}; // 'object literal' syntax
 const obj2 = new Object(); // 'object constructor' syntax
 
@@ -57,6 +59,7 @@ console.log("name" in ellie);
 console.log("age" in ellie);
 console.log("random" in ellie);
 console.log(ellie.random);
+
 // 6. for..in vs for..of
 // for (key in obj)
 console.clear();

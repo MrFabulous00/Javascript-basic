@@ -17,10 +17,11 @@
     const array = [1, 2, 3, 4, 5];
     const result = array.reverse();
     console.log(result);
-    console.log(array);
+    console.log(array); // 배열 자체도 변화시키고 리턴값도 변화 시킴
 }
 
 // Q4. make new array without the first two elements
+// splice는 배열 자체를 수정, slice는 배열에서 원하는 부분만 받아오고 싶을때(배열 수정X)
 {
     const array = [1, 2, 3, 4, 5];
     const result = array.slice(2, 5);
@@ -95,6 +96,6 @@ console.clear();
     const result = students
         .map((student) => student.score)
         .sort((a, b) => b - a)
-        .join();
+        .join(",");
     console.log(result);
 }
